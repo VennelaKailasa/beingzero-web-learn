@@ -8,8 +8,8 @@ app.get("/", function(req, res){
 app.get("/home", function(req, res){
     res.send("Welcome to home page");
 })
-ap.get("/resume",function(req,res)
-{
+app.get("/resume",function(req,res){
+	console.log("resume page opened");
 	res.sendfile(__dirname+"/resume.html");
 	
 })
