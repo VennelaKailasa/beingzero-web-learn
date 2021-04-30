@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-
+app.use(express.static(__dirname+"/frontend"));
 app.get("/", function(req, res){
     res.send("Welcome to Vennela's Basic Site");
 })
@@ -9,8 +9,8 @@ app.get("/home", function(req, res){
     res.send("Welcome to home page");
 })
 app.get("/resume",function(req,res){
-	console.log("resume page opened");
-	res.sendfile(__dirname+"/resume.html");
+	
+	res.sendfile(__dirname+"/frontend/html/resume.html");
 	
 })
 
