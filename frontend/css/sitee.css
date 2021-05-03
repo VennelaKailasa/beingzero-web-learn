@@ -91,7 +91,7 @@
 }
 .hr{
     border: 1px solid gray;
-        width: 100%;
+        width: 99%;
         height: 0px;
         position:fixed;
         bottom:8.9%;
