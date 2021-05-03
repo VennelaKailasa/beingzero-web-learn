@@ -8,9 +8,19 @@ app.get("/", function(req, res){
 app.get("/home", function(req, res){
     res.send("Welcome to home page");
 })
+app.get("/intro",function(req,res){
+	
+	res.sendFile(__dirname+"/frontend/html/htmlintro.html");
+	
+})
 app.get("/resume",function(req,res){
 	
-	res.sendfile(__dirname+"/frontend/html/resume.html");
+	res.sendFile(__dirname+"/frontend/html/resume.html");
+	
+})
+app.get("/search",function(req,res){
+	
+	res.sendFile(__dirname+"/frontend/html/gglsearchengine.html");
 	
 })
 
