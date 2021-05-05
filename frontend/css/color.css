@@ -1,0 +1,44 @@
+h1{
+    color:blueviolet;
+    position:fixed;
+    text-align:center;
+    width:100%;
+    
+
+    
+}
+.boxbackground{
+    position:fixed;
+    top:60%;
+    left:35%;
+    background-color:rgb(128,128,128);
+    text-align:center;
+    padding:100px;
+    width:200px;
+    
+
+  }
+  .green_slider{
+      position:fixed;
+      top:30%;
+      width:25%;
+      text-align:center;
+      text-decoration:none;
+      left:5%;
+  }
+  .blue_slider{
+    position:fixed;
+    top:30%;
+    width:25%;
+    text-align:center;
+    text-decoration:none;
+    left:35%;
+}
+.red_slider{
+    position:fixed;
+    top:30%;
+    width:25%;
+    text-align:center;
+    text-decoration:none;
+    left:65%;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="/css/color.css">
+</head>
+<body>
+    
+    <h1>COLOR PICKER</h1>
+    <div class="green_slider"><input id="green" type="range" min="0" max="255" onchange="update(this.value)">Green</input><br>
+    <p id="Green">128</p></div>
+    <div class="blue_slider"><input id="blue" type="range" min="0" max="255" onchange="update(this.value)">Blue</input><br>
+    <p id="Blue">128</p></div>
+    <div class="red_slider"><input id="red" type="range" min="0" max="255" onchange="update(this.value)">Red</input><br>
+    <p id="Red">128</p></div>
+    <div id ='check_color' class="boxbackground">rgb(128,128,128)</div>
+
+    <script src="/js/color.js"></script>
+
+</body>
+</html>
