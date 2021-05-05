@@ -26,7 +26,7 @@ h1{
       text-decoration:none;
       left:5%;
   }
-  .blue_slider{
+  .green_slider{
     position:fixed;
     top:30%;
     width:25%;
@@ -34,7 +34,7 @@ h1{
     text-decoration:none;
     left:35%;
 }
-.green_slider{
+.blue_slider{
     position:fixed;
     top:30%;
     width:25%;
