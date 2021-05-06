@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    
+</head>
+<body style="background-color: powderblue;">
+
+    <div class="layout_form">
+        <p class="heading"><b>REGISTRATION FORM</b>
+            <i class="fa  fa-user-plus" aria-hidden="true"></i><br>
+        </p>
+        <form>
+            <fieldset>
+                <legend>Registration Info</legend>
+                <div>
+                    <label for="fname">First Name:</label><br>
+                    <input id="fname" name="fname" type="text" placeholder="Enter first name" value=""><br>
+                </div>
+                <br>
+                <div>
+                    <label for="lname">Last Name:</label><br>
+                    <input id="lname" name="lname" type="text" placeholder="Enter last name" value=""><br>
+                </div>
+                <br>
+            <div>
+                <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter Username" value=""><br>
+            </div>
+            <br>
+            <div>
+            <label for="spwd">Set Password:</label><br>
+            <input type="password" id="spwd" name="spwd" placeholder="Set Password" value=""><br>
+            </div>
+            <br>
+            <div>
+                <label for="cpwd">Confirm Password:</label><br>
+                <input type="password" id="cpwd" name="cpwd" placeholder="Confirm Password" value=""><br>
+                </div>
+                <br>
+            <div >
+            <input type="checkbox" id="remember" name="remember" value="">
+            <label for="remember">Remember Me</label><br>
+            </div>
+            <br>
+            <div class="submit_button">
+                <input type="submit" id="sbutton" onclick="alert('Registered')"><br>
+            </div><br>
+            <div class="cancel_button">
+                <button type="button" id="cbutton" onclick="alert('Registration Cancelled')">Cancel</input><br>
+            </div><br>
+
+            </fieldset> 
+            
+        </form>
+        
+    </div>
+    
+   
+</body>
+</html>

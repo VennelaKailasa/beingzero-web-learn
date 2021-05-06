@@ -1,0 +1,19 @@
+.layout_form{
+    position:fixed;
+    width:20%;
+    top:15%;
+    
+    background-color: whitesmoke;
+    padding:20px 0px 30px 60px;
+    left:35%;
+}
+.cancel_button{
+    position:fixed;
+    top:74.8%;
+    left:46%;
+}
+fieldset{
+    width:60%;
+    text-align: left;
+
+}

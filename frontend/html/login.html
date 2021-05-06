@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <style>
+        fieldset{
+            width:20%;
+            text-align: left;
+        }
+    </style>
+</head>
+<body style="background-color: powderblue;">
+    <div class="layout_form">
+        <p class="heading"><b>LOGIN FORM</b>
+            <i class="fa fa-2x fa-user-circle" aria-hidden="true"></i><br> 
+
+        </p>
+        <form>
+            <fieldset>
+                <legend>Login Info</legend>
+            <div>
+                <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter Username"><br>
+            </div><br>
+            <div>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd" placeholder="Enter Password"><br>
+            </div>
+            <br>
+            <div >
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember Me</label><br>
+            </div>
+            <br>
+            <div class="forogt_pwd">
+           <a href="#" target="_blank">Forgot Password?</a>
+            </div>
+            <br>
+            <div class="submit_button" onclick="alert('Logged in')">
+                <input type="submit" id="sbutton">
+            </div>
+            <br>
+            <div class="cancel_button">
+                <button type="button" id="cbutton" onclick="alert('Logging out')">Cancel</input>
+            </div>
+            <br>
+
+            </fieldset> 
+            
+        </form>
+        
+    </div>
+    
+    <script>
+
+    </script>
+</body>
+</html>

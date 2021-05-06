@@ -1,0 +1,9 @@
+.layout_form{
+    position:fixed;
+    width:20%;
+    top:15%;
+    text-align:justify-all;
+    background-color: whitesmoke;
+    padding:20px 0px 30px 60px;
+    left:35%;
+}
