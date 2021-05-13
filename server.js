@@ -48,6 +48,11 @@ app.get("/todo",function(req,res){
 	res.sendFile(__dirname+"/frontend/html/todo.html");
 	
 })
+app.get("/mytodo",function(req,res){
+	
+	res.sendFile(__dirname+"/frontend/html/mytodo.html");
+	
+})
 app.get("/ls",function(req,res){
 	
 	res.sendFile(__dirname+"/frontend/html/ls.html");
