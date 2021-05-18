@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD OPERATIONS</title>
+</head>
+<body>
+    <hr>
+    <h1>Courses Table</h1>
+    <hr>
+    <div>
+        <form action="/sub" method="POST">
+        <input id="in" type="text" placeholder="Enter course name" name="in"></input>
+         <button id="addbtn" type="submit" onclick="displaypage()">Add course</button>
+
+        </form>
+    </div>
+    <hr>
+    <div id="disp"></div>
+    <hr>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+  //      const courselib=require('./backend/lib/courselib.js');
+        function displaypage()
+        {
+    //         var content=document.getElementById("in").value;
+    //         console.log("content is"+content);
+    //         document.getElementById("disp").innerHTML= document.getElementById("disp").innerHTML+content;
+    //          var x=[];
+    // x=courselib.getallcourses();
+    // console.log(x);
+    $.get("./backend/lib/courselib.js",function(req,res){
+        console.log("displayed");
+    }).fail(function(xhr,status){
+        console.log("failed");
+    })
+
+        }
+       
+    </script>
+
+</body>
+</html>
