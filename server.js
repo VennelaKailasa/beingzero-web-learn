@@ -71,34 +71,34 @@ app.use(express.json());
 app.get("/", function(req, res){
     res.send("Welcome to Vennela's Basic Site");
 })
-app.get("/home", function(req, res){
-    res.send("Welcome to home page");
-})
-app.get("/intro",function(req,res){
+// app.get("/home", function(req, res){
+//     res.send("Welcome to home page");
+// })
+// app.get("/intro",function(req,res){
 	
-	res.sendFile(__dirname+"/frontend/html/htmlintro.html");
+// 	res.sendFile(__dirname+"/frontend/html/htmlintro.html");
 	
-})
-app.get("/resume",function(req,res){
+// })
+// app.get("/resume",function(req,res){
 	
-	res.sendFile(__dirname+"/frontend/html/resume.html");
+// 	res.sendFile(__dirname+"/frontend/html/resume.html");
 	
-})
-app.get("/search",function(req,res){
+// })
+// app.get("/search",function(req,res){
 	
-	res.sendFile(__dirname+"/frontend/html/gglsearchengine.html");
+// 	res.sendFile(__dirname+"/frontend/html/gglsearchengine.html");
 	
-})
-app.get("/color",function(req,res){
+// })
+// app.get("/color",function(req,res){
 	
-	res.sendFile(__dirname+"/frontend/html/color.html");
+// 	res.sendFile(__dirname+"/frontend/html/color.html");
 	
-})
-app.get("/login",function(req,res){
+// })
+// app.get("/login",function(req,res){
 	
-	res.sendFile(__dirname+"/frontend/html/login.html");
+// 	res.sendFile(__dirname+"/frontend/html/login.html");
 	
-})
+// })
 // app.get("/piechart",function(req,res){
 	
 // 	res.sendFile(__dirname+"/frontend/html/piechart.html");
