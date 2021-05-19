@@ -104,16 +104,8 @@ app.get("/piechart",function(req,res){
 	res.sendFile(__dirname+"/frontend/html/piechart.html");
 	
 })
-app.get("/todo",function(req,res){
-	
-	res.sendFile(__dirname+"/frontend/html/todo.html");
-	
-})
-app.get("/ls",function(req,res){
-	
-	res.sendFile(__dirname+"/frontend/html/ls.html");
-	
-})
+
+
 //mongodb+srv://vennela00:<password>@cluster0.vkhlz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
 
