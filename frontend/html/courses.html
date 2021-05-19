@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD OPERATIONS</title>
+    <link rel="stylesheet" href="/css/todo.css">
+    <title>Document</title>
 </head>
 <body>
     <hr>
@@ -11,34 +12,15 @@
     <hr>
     <div>
         <form action="/sub" method="POST">
-        <input id="in" type="text" placeholder="Enter course name" name="in"></input>
-         <button id="addbtn" type="submit" onclick="displaypage()">Add course</button>
-
+            <input type="text" id="cinp" name="cinp" for ="cinp" class="addtxt">
+            <button type="submit" onclick="addElement()" class="addbtn">Add Course</button>
+            <!-- <p class="list">TExt</p> -->
+           <a href="/html/displaycourses.html"><button type="button" id="viewall">View All</button></a>
         </form>
     </div>
-    <hr>
-    <div id="disp"></div>
-    <hr>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-  //      const courselib=require('./backend/lib/courselib.js');
-        function displaypage()
-        {
-    //         var content=document.getElementById("in").value;
-    //         console.log("content is"+content);
-    //         document.getElementById("disp").innerHTML= document.getElementById("disp").innerHTML+content;
-    //          var x=[];
-    // x=courselib.getallcourses();
-    // console.log(x);
-    $.get("./backend/lib/courselib.js",function(req,res){
-        console.log("displayed");
-    }).fail(function(xhr,status){
-        console.log("failed");
-    })
-
-        }
-       
-    </script>
+    
+    <!-- <script src="/js/todo.js"></script> -->
+    
 
 </body>
 </html>
