@@ -13,16 +13,60 @@ mongoose.connect("mongodb+srv://vennela00:"+"ravi098"+"@cluster0.vkhlz.mongodb.n
 mongoose.connection.on('connected',function(){
     console.log("Database connected");
 })
-var courses=require('./coursedb.js');
-app.post("/sub",function(req,res){
-    var x={"coursename":req.body.cinp};
-    courses.createcourse(x);
-    res.sendFile(__dirname+"/frontend/html/course.html");
+const table = require("./backend/models/coursemodel");
 
+
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
+
+app.get("/crud", function(req, res){
+  res.sendFile(__dirname+"/frontend/html/coursebackend.html");
+})
+app.get('/crud/get',function(req, res){
+     table.find()
+    .then((result) =>{
+        res.send(result);
+        console.log(result);
+    })
+    .catch((err) => {
+        console.log(err);
+    })
+})
+app.post('/crud/post',function(req,res){
+     var newUser= req.body;
+    const newTable = new table({
+        names : newUser.names,
+        articles : newUser.articles,
+        id : newUser.id
+    })
+    console.log(newTable);
+    newTable.save();
+})
+app.delete('/crud/del/:id', function(req, res){
+    var i=req.params.id
+    table.findByIdAndDelete(i, (err)=>{
+        if(err){
+            console.log('Error:'+err);
+        }
+        else{
+            console.log('Success');
+        }
+    })
 })
 
-app.get("/courses",function(req,res){
-    res.sendFile(__dirname+"/frontend/html/courses.html");
+app.put('/crud/put/:id', function(req, res){
+    var i=req.params.id
+
+    table.findById(i, function (err,Obj) {
+        if(err){
+            console.log('Error:' + err);
+        }
+        else{
+            table.findByIdAndUpdate(i, {articles: req.body.articles }, function(){})
+        };
+    });
+
+
 })
 
 

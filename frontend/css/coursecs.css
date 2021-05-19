@@ -1,0 +1,79 @@
+.addingdiv{
+    text-align : center;
+    height : 50px;
+   
+}
+.selectdiv{
+    visibility: hidden;
+}
+.addbtn{
+    width : 150px;
+    height : 50px;
+    background-color : rgb(37, 107, 165);
+    border : 1px solid black;
+    font-family : 'Courier New', Courier, monospace;
+    color:white;
+    font-size : 20px;
+    position:fixed;
+    left:15px;
+}
+.selector{
+    width : 50%;
+    height : 30px;
+    margin-top : 10px;
+    border: 2px solid green;
+    outline: none !important;
+}
+.articul{
+    width : 50%;
+    height : 25px;
+    margin-top : 10px;
+    border: 2px solid green;
+    outline: none !important;
+}
+.subbtn{
+    width : 100px;
+    height : 30px;
+    background-color :rgb(38, 99, 179);
+    border : 1px solid black;
+    font-family : 'Courier New', Courier, monospace;
+    font-size : 20px;
+    margin-top : 10px;
+    color:white;
+
+}
+.displayer{
+    width : 100%;
+    margin-top : 20px;
+    color:white;
+}
+table{
+     border-collapse: collapse;
+     width : 100%;
+     color:white;
+     
+}
+thead th{
+    background-color : white;
+    font-size : 20px;
+    font-family : 'Courier New', Courier, monospace;
+    color:yellowgreen;
+    
+}
+tbody th{
+    border-bottom: 1px solid #ddd;
+    font-style : normal;
+    font-size : 10px;
+    font-weight : normal;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+   
+
+}
+.container{
+    position:fixed;
+    top:20%
+   
+}
+tr:nth-child(odd){background-color: #5c928f}
