@@ -68,10 +68,6 @@ app.put('/crud/put/:id', function(req, res){
 
 
 })
-
-
-
-
 app.get("/", function(req, res){
     res.send("Welcome to Vennela's Basic Site");
 })
