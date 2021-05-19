@@ -1,10 +1,7 @@
 google.charts.load('current',{'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 var cc,cf,mp,lc
-function drawChart()
-{
-    cc=
-}
+
 // function totalsum(){
 //      cc=document.getElementById('ccmarks').value;
 //      cf=document.getElementById('cfmarks').value;
