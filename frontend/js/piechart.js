@@ -2,20 +2,20 @@ google.charts.load('current',{'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 var cc,cf,mp,lc
 
-// function totalsum(){
-//      cc=document.getElementById('ccmarks').value;
-//      cf=document.getElementById('cfmarks').value;
-//      mp=document.getElementById('mpmarks').value;
-//      lc=document.getElementById('lcmarks').value;
-//      var name=document.getElementById('name').value;
-//     var total=parseInt(cc)+parseInt(cf)+parseInt(mp)+parseInt(lc);
-//     document.getElementById('total').innerHTML="The total marks of " + name + " are :" + total;
+function totalsum(){
+     cc=document.getElementById('ccmarks').value;
+     cf=document.getElementById('cfmarks').value;
+     mp=document.getElementById('mpmarks').value;
+     lc=document.getElementById('lcmarks').value;
+     var name=document.getElementById('name').value;
+    var total=parseInt(cc)+parseInt(cf)+parseInt(mp)+parseInt(lc);
+    document.getElementById('total').innerHTML="The total marks of " + name + " are :" + total;
 
-//     drawChart();
+    drawChart();
     
     
 
-// }
+}
 function drawChart()
 {
 
