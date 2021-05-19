@@ -19,55 +19,55 @@ const table = require("./backend/models/coursemodel");
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
-app.get("/crud", function(req, res){
-  res.sendFile(__dirname+"/frontend/html/coursebackend.html");
-})
-app.get('/crud/get',function(req, res){
-     table.find()
-    .then((result) =>{
-        res.send(result);
-        console.log(result);
-    })
-    .catch((err) => {
-        console.log(err);
-    })
-})
-app.post('/crud/post',function(req,res){
-     var newUser= req.body;
-    const newTable = new table({
-        names : newUser.names,
-        articles : newUser.articles,
-        id : newUser.id
-    })
-    console.log(newTable);
-    newTable.save();
-})
-app.delete('/crud/del/:id', function(req, res){
-    var i=req.params.id
-    table.findByIdAndDelete(i, (err)=>{
-        if(err){
-            console.log('Error:'+err);
-        }
-        else{
-            console.log('Success');
-        }
-    })
-})
+// app.get("/crud", function(req, res){
+//   res.sendFile(__dirname+"/frontend/html/coursebackend.html");
+// })
+// app.get('/crud/get',function(req, res){
+//      table.find()
+//     .then((result) =>{
+//         res.send(result);
+//         console.log(result);
+//     })
+//     .catch((err) => {
+//         console.log(err);
+//     })
+// })
+// app.post('/crud/post',function(req,res){
+//      var newUser= req.body;
+//     const newTable = new table({
+//         names : newUser.names,
+//         articles : newUser.articles,
+//         id : newUser.id
+//     })
+//     console.log(newTable);
+//     newTable.save();
+// })
+// app.delete('/crud/del/:id', function(req, res){
+//     var i=req.params.id
+//     table.findByIdAndDelete(i, (err)=>{
+//         if(err){
+//             console.log('Error:'+err);
+//         }
+//         else{
+//             console.log('Success');
+//         }
+//     })
+// })
 
-app.put('/crud/put/:id', function(req, res){
-    var i=req.params.id
+// app.put('/crud/put/:id', function(req, res){
+//     var i=req.params.id
 
-    table.findById(i, function (err,Obj) {
-        if(err){
-            console.log('Error:' + err);
-        }
-        else{
-            table.findByIdAndUpdate(i, {articles: req.body.articles }, function(){})
-        };
-    });
+//     table.findById(i, function (err,Obj) {
+//         if(err){
+//             console.log('Error:' + err);
+//         }
+//         else{
+//             table.findByIdAndUpdate(i, {articles: req.body.articles }, function(){})
+//         };
+//     });
 
 
-})
+// })
 app.get("/", function(req, res){
     res.send("Welcome to Vennela's Basic Site");
 })
