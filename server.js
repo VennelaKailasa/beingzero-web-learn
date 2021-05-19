@@ -99,11 +99,11 @@ app.get("/login",function(req,res){
 	res.sendFile(__dirname+"/frontend/html/login.html");
 	
 })
-app.get("/piechart",function(req,res){
+// app.get("/piechart",function(req,res){
 	
-	res.sendFile(__dirname+"/frontend/html/piechart.html");
+// 	res.sendFile(__dirname+"/frontend/html/piechart.html");
 	
-})
+// })
 
 
 //mongodb+srv://vennela00:<password>@cluster0.vkhlz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
