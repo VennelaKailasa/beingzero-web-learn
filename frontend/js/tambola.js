@@ -31,8 +31,8 @@ $(document).ready(function(){
         for(let i=1;i<101;i++)
         {
         $("#"+i).css("background-color","white");
-        console.log("reset clicked");
         }
+        $(".container").hide()
 
     })
 
