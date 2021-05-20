@@ -1,18 +1,27 @@
 const express = require('express');
 const app = express();
+const mongoose=require('mongoose');
 
 const bodyParser=require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+const config=require('./backend/config/config');
+const mongoconnection=require('./backend/lib/mongoconnection');
+
 app.use(express.static(__dirname+"/frontend"));
 
+// const connectionString=config.mongoConnectionString;
+// // mongoose.connect("mongodb+srv://vennela00:"+"ravi098"+"@cluster0.vkhlz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true});
+// // mongoose.connection.on('connected',function(){
+// //     console.log("Database connected");
+// // })
+// mongoose.connect(connectionString,{useNewUrlParser:true,useUnifiedTopology:true});
+// mongoose.connection.on('connected',function(){
+//     console.log("Database connected");
+// })
 
-const mongoose=require('mongoose');
-mongoose.connect("mongodb+srv://vennela00:"+"ravi098"+"@cluster0.vkhlz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true});
-mongoose.connection.on('connected',function(){
-    console.log("Database connected");
-})
+mongoconnection.connect();
 const table = require("./backend/models/coursemodel");
 
 
@@ -114,9 +123,9 @@ app.get("/piechart",function(req,res){
 
 
 // Heroku will automatically set an environment variable called PORT
-const PORT = process.env.PORT || 3000;
+// const PORT = process.env.PORT || 3000;
 
 // Start the server
-app.listen(PORT, function(){
-    console.log("Server Starting running on http://localhost:"+PORT);
+app.listen(config.webPort, function(){
+    console.log("Server Starting running on http://localhost:"+config.webPort);
 })

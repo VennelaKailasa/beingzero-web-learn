@@ -46,7 +46,7 @@ $(document).ready(function() {
                        <td id="result-${obj._id}" data-testid="${obj._id}"">${obj.articles}</td>
                        <td>
                          <button data-testid="${obj._id}" id="delete-${obj._id}">Delete</button>
-                         <button data-testid="${obj._id}"  id="save-${obj._id}">Edit</button>
+                         <button data-testid="${obj._id}"  id="save-${obj._id}">Save</button>
                        </td>
                    </tr>`
         $('#tests-table').append(row)
