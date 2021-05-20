@@ -1,0 +1,42 @@
+div{
+    text-align:center;
+}
+table{
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+table,tr{
+    width:60%;
+    border:1px solid black;
+    border-collapse: collapse;
+}
+td{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+.num{
+    font-size:100px;
+}
+/* #t1 tr:nth-child(odd){
+    background-color:powderblue;
+} */
+.ttable{
+    font-size:1.6em;
+}
+td{
+    min-width:55px;
+    height:47px;
+}
+#numbtn{
+    
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+

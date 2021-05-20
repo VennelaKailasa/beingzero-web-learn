@@ -113,19 +113,14 @@ app.get("/piechart",function(req,res){
 	res.sendFile(__dirname+"/frontend/html/piechart.html");
 	
 })
+app.get("/tambola",function(req,res){
+
+    res.sendFile(__dirname+"/frontend/html/tambola.html")
+})
 
 
 //mongodb+srv://vennela00:<password>@cluster0.vkhlz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
-
-
-
-
-
-// Heroku will automatically set an environment variable called PORT
-// const PORT = process.env.PORT || 3000;
-
-// Start the server
 app.listen(config.webPort, function(){
     console.log("Server Starting running on http://localhost:"+config.webPort);
 })
