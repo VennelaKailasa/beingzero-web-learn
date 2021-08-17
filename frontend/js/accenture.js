@@ -5,7 +5,7 @@ $('#signin_button').click(function(){
  });
  $('#register_button').click(function(){
     console.log('in here')
-    window.location='https://vennela-webdev.herokuapp.com/signin';
+    window.location='https://vennela-webdev.herokuapp.com/register';
  });
 });
 
