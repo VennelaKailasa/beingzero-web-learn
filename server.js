@@ -77,17 +77,32 @@ app.put('/crud/put/:id', function(req, res){
 
 
 })
+app.get("/accenture",function(req,res){
+    res.sendFile(__dirname+"/frontend/html/accenture.html");
+})
 app.get("/", function(req, res){
     res.send("Welcome to Vennela's Basic Site");
 })
 app.get("/home", function(req, res){
     res.send("Welcome to home page");
 })
+
 app.get("/intro",function(req,res){
 	
 	res.sendFile(__dirname+"/frontend/html/htmlintro.html");
 	
 })
+app.get("/signin",function(req,res){
+	
+	res.sendFile(__dirname+"/frontend/html/signin.html");
+	
+})
+app.get("/register",function(req,res){
+	
+	res.sendFile(__dirname+"/frontend/html/register.html");
+	
+})
+
 app.get("/resume",function(req,res){
 	
 	res.sendFile(__dirname+"/frontend/html/resume.html");
