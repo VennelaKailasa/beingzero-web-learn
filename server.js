@@ -102,6 +102,11 @@ app.get("/register",function(req,res){
 	res.sendFile(__dirname+"/frontend/html/register.html");
 	
 })
+app.get("/upload",function(req,res){
+	
+	res.sendFile(__dirname+"/frontend/html/upload.html");
+	
+})
 
 app.get("/resume",function(req,res){
 	
